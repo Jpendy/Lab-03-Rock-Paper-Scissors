@@ -1,0 +1,16 @@
+main {
+    margin: 100px auto;
+    width: 90%;
+    border: 2px black solid;
+    padding: 40px;
+    text-align: center;
+}
+
+div {
+    margin: 30px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
