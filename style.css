@@ -6,6 +6,7 @@ main {
     border: 2px black solid;
     padding: 40px;
     text-align: center;
+    background: -webkit-linear-gradient(orange, yellow);
 }
 
 div {
@@ -36,8 +37,12 @@ button {
     transition: 0.5s;
     cursor: pointer;
     box-shadow: 2px 2px 5px 2px;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    background: lightgreen;
 }
 
 button:hover {
-    background: orange;
+    background: lightseagreen;
 }
