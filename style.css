@@ -31,10 +31,11 @@ input[type=radio]:checked + img {
 button {
     height: 70px;
     width: 120px;
-    border: 1px solid blue;
+    border: 2px solid blue;
     border-radius: 20px;
     transition: 0.5s;
     cursor: pointer;
+    box-shadow: 2px 2px 5px 2px;
 }
 
 button:hover {
