@@ -1,6 +1,4 @@
-//import './example.test.js';
-
-const test = QUnit.test;
+export default compareResults;
 
 function compareResults(playerThrow, computerThrow) {
     if (playerThrow === computerThrow) {
@@ -24,22 +22,4 @@ function compareResults(playerThrow, computerThrow) {
     else if (playerThrow === 'scissors' && computerThrow === 'paper') {
         return 'win';
     }
-
 }
-
-test('time to test a function', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-
-    const playerThrow = 'paper';
-    const computerThrow = 'paper';
-    const expected = 'draw';
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-
-    const result = compareResults(playerThrow, computerThrow);
-    //Assert
-    // Make assertions about what is expected valid result
-    assert.equal(result, expected);
-});
