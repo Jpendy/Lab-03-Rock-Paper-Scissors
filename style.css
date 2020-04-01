@@ -1,9 +1,13 @@
 
+body {
+    background: -webkit-linear-gradient(lightblue, deepskyblue);
+}
 
 main {
     margin: 100px auto;
     width: 70%;
     border: 2px black solid;
+    border-radius: 100px;
     padding: 40px;
     text-align: center;
     background: -webkit-linear-gradient(orange, yellow);
@@ -11,6 +15,8 @@ main {
 
 div {
     margin: 30px;
+    color: blue;
+    font-size: 20px;
 }
 
 img {

@@ -46,6 +46,10 @@ playButton.addEventListener('click', () => {
 });
 
 resetButton.addEventListener('click', () => {
+    gamesPlayed = 0;
+    gamesWon = 0;
+    gamesLost = 0;
+    draws = 0;
     gamesPlayedSpan.textContent = '0';
     gamesWonSpan.textContent = '0';
     gamesLostSpan.textContent = '0';
