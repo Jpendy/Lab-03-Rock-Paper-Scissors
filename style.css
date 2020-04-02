@@ -68,7 +68,7 @@ input {
 }
 
 input[type=radio]:checked + img {
-    border: solid 3px blue;
+    border: solid 4px blue;
     box-shadow: 2px 2px 10px 2px;
 }
 
@@ -100,4 +100,18 @@ button:hover {
     font-size: 30px;
     padding-left: 5px;
     text-transform: capitalize;
+}
+
+#computerThrowImage {
+    height: 150px;
+    width: 150px;
+    border: 3px solid red;
+    box-shadow: 2px 2px 5px 2px black;
+    transition: left linear 0.2s, width linear 0.2s, height linear 0.2s;
+    visibility: hidden;
+}
+
+#computerThrowImage:hover {
+    height: 160px;
+    width: 160px;
 }

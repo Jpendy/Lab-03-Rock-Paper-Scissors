@@ -8,8 +8,8 @@ const gamesWonSpan = document.getElementById('games-won');
 const gamesLostSpan = document.getElementById('games-lost');
 const drawsSpan = document.getElementById('draws');
 const resetButton = document.getElementById('reset-button');
+const computerThrowImage = document.getElementById('computerThrowImage');
 
-randomThrow();
 let gamesPlayed = 0;
 let gamesWon = 0;
 let gamesLost = 0;
@@ -21,6 +21,21 @@ playButton.addEventListener('click', () => {
     const userChoice = selectedRadioButton.value;
 
     let computerThrow = randomThrow();
+
+    if (computerThrow === 'rock') {
+        computerThrowImage.src = 'https://hips.hearstapps.com/ell.h-cdn.co/assets/17/15/1600x1066/gallery-1492087861-gettyimages-666432436.jpg?resize=480:*';
+        computerThrowImage.style.visibility = 'visible';
+    }
+    else if (computerThrow === 'paper') {
+        computerThrowImage.src = 'https://www.staples-3p.com/s7/is/image/Staples/sp41688553_sc7?wid=512&hei=512';
+        computerThrowImage.style.visibility = 'visible';
+
+    }
+
+    else {
+        computerThrowImage.src = 'https://i.pinimg.com/originals/a3/25/84/a325840a691ac27ac9677cd17293acd1.jpg';
+        computerThrowImage.style.visibility = 'visible';
+    }
 
     computerThrowSpan.textContent = computerThrow;
     
@@ -54,4 +69,6 @@ resetButton.addEventListener('click', () => {
     gamesWonSpan.textContent = '0';
     gamesLostSpan.textContent = '0';
     drawsSpan.textContent = '0';
+    computerThrowSpan.textContent = '';
+    computerThrowImage.style.visibility = 'hidden';
 });
