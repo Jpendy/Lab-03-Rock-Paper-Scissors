@@ -1,7 +1,7 @@
 export default randomThrow;
 
 function randomThrow() {
-    let throwRandom = Math.ceil(Math.random()*3);
+    let throwRandom = Math.ceil(Math.random() * 3);
     if (throwRandom === 1) {
         return 'rock';
     }
