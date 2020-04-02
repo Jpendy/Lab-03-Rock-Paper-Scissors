@@ -95,3 +95,9 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#computer-throw {
+    font-size: 30px;
+    padding-left: 5px;
+    text-transform: capitalize;
+}
