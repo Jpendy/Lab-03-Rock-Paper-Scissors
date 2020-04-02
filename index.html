@@ -11,13 +11,18 @@
 
 <body>
     <main>
+        <h1>Rock, Paper, Scissors Game</h1>
+         <div id="instructions">
+            <p>Welcome to rock, paper, scissors! Choose one from below and see how you do!</p>
+            <p id="game-rules">Rock beats Scissors, Scissors beats Paper, and Paper beats Rock!</p>
+         </div>
 
         <label>   <input type="radio" name="choice" value="rock" >  <img src="https://hips.hearstapps.com/ell.h-cdn.co/assets/17/15/1600x1066/gallery-1492087861-gettyimages-666432436.jpg?resize=480:*" alt="">  </label>
         <label>   <input type="radio" name="choice" value="paper">  <img src="https://www.staples-3p.com/s7/is/image/Staples/sp41688553_sc7?wid=512&hei=512" alt="">  </label>
         <label>   <input type="radio" name="choice" value="scissors"><img src="https://i.pinimg.com/originals/a3/25/84/a325840a691ac27ac9677cd17293acd1.jpg" alt=""></label>
 
         <div> <button id="play-button">Go</button> </div>    
-
+        
         <div>Computer Choice: <span id="computer-throw"></span></div>
         <div>Games Played: <span id="games-played">0</span></div>
         <div>Games Won: <span id="games-won">0</span></div>
