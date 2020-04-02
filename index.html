@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+    <main>
+        <h1>Rock, Paper, Scissors Game</h1>
+         <div id="instructions">
+            <p>Welcome to rock, paper, scissors! Choose one from below and see how you do!</p>
+            <p id="game-rules">Rock beats Scissors, Scissors beats Paper, and Paper beats Rock!</p>
+         </div>
+
+        <label>   <input type="radio" name="choice" value="rock" checked>  <img src="https://hips.hearstapps.com/ell.h-cdn.co/assets/17/15/1600x1066/gallery-1492087861-gettyimages-666432436.jpg?resize=480:*" alt="">  </label>
+        <label>   <input type="radio" name="choice" value="paper">  <img src="https://www.staples-3p.com/s7/is/image/Staples/sp41688553_sc7?wid=512&hei=512" alt="">  </label>
+        <label>   <input type="radio" name="choice" value="scissors"><img src="https://i.pinimg.com/originals/a3/25/84/a325840a691ac27ac9677cd17293acd1.jpg" alt=""></label>
+
+        <div> <button id="play-button">Go</button> </div>    
+        
+        <div>Computer Choice: 
+             <img id="computerThrowImage" src="" alt=""><span id="computer-throw"></span>
+            </div>
+
+        <div id="counters">
+            <div>Games Played: <span id="games-played">0</span></div>
+            <div>Games Won: <span id="games-won">0</span></div>
+            <div>Games Lost: <span id="games-lost">0</span></div>
+            <div>Draws: <span id="draws">0</span></div>
+         </div>
+        <button id="reset-button">Reset</button>
+    </main>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

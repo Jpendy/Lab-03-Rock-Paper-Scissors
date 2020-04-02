@@ -1,0 +1,118 @@
+
+body {
+    background: -webkit-linear-gradient(lightblue, deepskyblue);
+}
+
+main {
+    margin: 100px auto;
+    width: 70%;
+    border: 2px black solid;
+    border-radius: 100px;
+    padding: 40px;
+    text-align: center;
+    background: -webkit-linear-gradient(orange, yellow);
+    box-shadow: 2px 2px 50px 4px;
+    font-family: cursive;
+
+}
+
+h1, #instructions{
+    margin: 50px auto;
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    color: blue;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px 2px black;
+    background: -webkit-linear-gradient(lightblue, lightgray)
+}
+
+#instructions {
+    margin: 50px auto;
+    width: 80%;
+}
+
+
+p {
+    color: blue;
+    font-size: 30px;
+}
+
+#game-rules {
+    font-size: 20px ;
+}
+
+div {
+    margin: 30px;
+    color: blue;
+    font-size: 20px;
+}
+
+img {
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: left linear 0.2s, width linear 0.2s, height linear 0.2s;
+}
+
+img:hover {
+    height: 210px;
+    width: 210px;
+}
+
+input {
+    display: none;
+}
+
+input[type=radio]:checked + img {
+    border: solid 4px blue;
+    box-shadow: 2px 2px 10px 2px;
+}
+
+button {
+    height: 70px;
+    width: 120px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 2px;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    background: lightgreen;
+}
+
+button:hover {
+    background: lightseagreen;
+}
+
+#counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#computer-throw {
+    font-size: 30px;
+    padding-left: 5px;
+    text-transform: capitalize;
+}
+
+#computerThrowImage {
+    margin: 10px auto;
+    height: 150px;
+    width: 150px;
+    border: 3px solid red;
+    box-shadow: 2px 2px 5px 2px black;
+    transition: left linear 0.2s, width linear 0.2s, height linear 0.2s;  
+    display: none;
+
+}
+#computerThrowImage:hover {
+    height: 160px;
+    width: 160px;
+}
